@@ -47,20 +47,20 @@ hr{ border-top-color:#dadada;}
 
 /* Header */
 #header {
-	height: 77px;
+	height: 80px;
 	position: relative;
 	width: 100%;
 	z-index: -9;
 }
 #header h1 {
-	background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
-	height: 31px;
-	left: 20px;
-	line-height: 600px;
+	/* background: url("../img/logo.png") no-repeat scroll 0 0 transparent; */
+	height: 77px;
+	left: 60px;
+	/* line-height: 600px; */
 	overflow: hidden;
 	position: relative;
-	top: 26px;
-	width: 191px;
+	top: 11px;
+	width: 81px;
 }
 #header h1 a {
 	display: block;
@@ -205,7 +205,7 @@ hr{ border-top-color:#dadada;}
 #content-header {
 	position: abslute;
 	width: 100%;
-	margin-top: -38px;
+	margin-top: -40px;
 	z-index: 20;
 }
 #content-header h1 {
@@ -1273,6 +1273,12 @@ form {
 }
 /* Responsive design */
 @media (max-width: 480px) {
+#header {
+	height: 110px;
+	position: relative;
+	width: 100%;
+	z-index: -9;
+}
 #header h1 {
 	top: 10px; left:5px;
 	margin: 3px auto;
@@ -1460,7 +1466,7 @@ form {
 	padding: 5px 4px 2px;
 }
 }
- @media (min-width: 481px) and (max-width: 970px) {
+@media (min-width: 481px) and (max-width: 970px) {
 body {
 	background:#49CCED
 }
@@ -1477,7 +1483,7 @@ body {
 	display:block;
 }
 #content {
-	margin-top:0px;
+	margin-top:40px;
 }
 #sidebar > ul > li {
 	float:none;

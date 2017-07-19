@@ -14,11 +14,11 @@
 <link rel="stylesheet" href="css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!--Header-part-->
 <div id="header">  
-  <h1><a href="dashboard.html">Admin</a></h1>
+  <h1><a href="dashboard.html"><img src="img/logo-md.png" alt="Logo"></a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -59,12 +59,31 @@
 <!--close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Home</a>
-  <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
+  <ul>    
+	<li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
+    <li class="submenu"><a href="call-management.html"><i class="icon icon-comment-alt"></i> <span>Call Management</span></a>
+	 <ul>
+        <li><a href="#">Call Details</a></li>
+        <li><a href="#">Call History</a></li>   
+      </ul>
+	</li>
+	<li class="submenu"><a href="call-management.html"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
+	 <ul>
+        <li><a href="#">Add Doctor</a></li>
+        <li><a href="#">Edit Doctor</a></li>
+		<li><a href="#">Remove Doctor</a></li>		
+      </ul>
+	</li>
+	<li class="submenu"><a href="call-management.html"><i class="icon icon-cogs"></i> <span>Hospital Management</span></a>
+	 <ul>
+        <li><a href="#">Add Hospital</a></li>          
+        <li><a href="#">Edit Hospital</a></li>          
+        <li><a href="#">Remove Hospital</a></li>          
+      </ul>
+	</li>		
     <li><a href="organization-management.html"><i class="icon icon-signal"></i> <span>Organization Management</span></a> </li>	
     <li><a href="care-management.html"><i class="icon icon-group"></i> <span>Care Management</span></a> </li>
     <li><a href="message-management.html"><i class="icon icon-envelope"></i> <span>Message Management</span></a></li>
-    <li><a href="call-management.html"><i class="icon icon-comment-alt"></i> <span>Call Management</span></a></li>
 	<li><a href="chart-management.html"><i class="icon icon-signal"></i> <span>Chart Management</span></a></li>
 	<li><a href="device-management.html"><i class="icon icon-cogs"></i> <span>Device Management</span></a></li>
 	<li><a href="app-management.html"><i class="icon icon-cogs"></i> <span>App Management</span></a></li>
