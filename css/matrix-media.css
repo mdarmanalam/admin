@@ -9,7 +9,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#770f1d', end
 }
 
 #header {
-	background-color: #1f262d;
+   background-color: #fff;
    margin-top:10px;
 }
 #search input[type=text], #search button {
