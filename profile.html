@@ -47,13 +47,11 @@
 <!--sidebar-menu-->
 <div id="sidebar"><a href="index.html" class="visible-phone"><i class="icon icon-home"></i> Home</a>
   <ul>    
-	<li class="active hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
+	<li class="hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
     <li><a href="call-management.html"><i class="icon icon-comment-alt"></i> <span>Call Management</span></a></li>
-	<li class="submenu"><a href="doctor-management.html"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
+	<li class="submenu"><a href="#"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
 	 <ul>
-        <li><a href="doctor-management.html">Add Doctor</a></li>
-        <li><a href="doctor-management.html">Edit Doctor</a></li>
-		<li><a href="doctor-management.html">Remove Doctor</a></li>		
+        <li><a href="doctor-management.html">Doctor Details</a></li>     
       </ul>
 	</li>
 	<li><a href="hospital-management.html"><i class="icon icon-cogs"></i> <span>Hospital Management</span></a></li>   
@@ -92,13 +90,13 @@
             <div class="widget-content nopadding">
               <form class="form-horizontal" method="post" action="#" name="password_validate" id="password_validate" novalidate="novalidate">
 				<div class="control-group">
-					<label class="control-label">Your Name</label>
+					<label class="control-label">Name</label>
 					<div class="controls">
 					  <input type="text" name="required" id="required">
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">Your Email</label>
+					<label class="control-label">Email</label>
 					<div class="controls">
 					  <input type="text" name="email" id="email">
 					</div>
@@ -113,7 +111,8 @@
 					<label for="normal" class="control-label">Phone No.</label>
 					<div class="controls">
 						<input type="text" id="mask-phone" class="span8 mask text">
-					<span class="help-block blue span8">(999) 999-9999</span> </div>
+						<span class="help-block blue span8">(999) 999-9999</span> 
+					</div>
 				</div>
 				<div class="control-group">
 				  <label class="control-label">Message</label>
@@ -124,7 +123,7 @@
 				 <div class="control-group">
 				  <label class="control-label">Select Country</label>
 				  <div class="controls">
-					<select >
+					<select>
 					  <option>First option</option>
 					  <option>Second option</option>
 					  <option>Third option</option>
@@ -182,9 +181,7 @@
 <script src="js/matrix.popover.js"></script> 
 <script src="js/jquery.dataTables.min.js"></script> 
 <script src="js/matrix.tables.js"></script> 
-<script>
-	$('.textarea_editor').wysihtml5();
-</script>
+
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
   // a different page. Ignore if the value returned is a null string:

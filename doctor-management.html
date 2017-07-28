@@ -50,13 +50,11 @@
 <!--sidebar-menu-->
 <div id="sidebar"><a href="index.html" class="visible-phone"><i class="icon icon-home"></i> Home</a>
   <ul>    
-	<li class="active hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
+	<li class="hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
     <li><a href="call-management.html"><i class="icon icon-comment-alt"></i> <span>Call Management</span></a></li>
-	<li class="submenu"><a href="doctor-management.html"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
+	<li class="submenu"><a href="#"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
 	 <ul>
-        <li><a href="doctor-management.html">Add Doctor</a></li>
-        <li><a href="doctor-management.html">Edit Doctor</a></li>
-		<li><a href="doctor-management.html">Remove Doctor</a></li>		
+        <li><a href="doctor-management.html">Doctor Details</a></li>     
       </ul>
 	</li>
 	<li><a href="hospital-management.html"><i class="icon icon-cogs"></i> <span>Hospital Management</span></a></li>   
@@ -70,17 +68,174 @@
 <!--main-container-part-->
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i> Home</a> <a href="#" class="current">Doctor</a> </div>
-    <h1>Doctor</h1>
-  </div>
-  <div class="container-fluid">
-    <hr>
+    <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i> Home</a> <a href="#" class="current">Doctor Details</a> </div>
+    <h1>Doctor Details</h1>	
+  </div>  
+  <div class="container-fluid">	
+    <hr>		
+	<a href="#addDoctorModal" data-toggle="modal" class="btn btn-success">Add Doctor</a>
+	
+	<div id="addDoctorModal" class="modal hide" role="dialog" aria-hidden="true" style="display: none;width: 1000px;margin: 0 auto;left: 0;right: 0;border-radius: 0;">
+	  <div class="modal-dialog">   
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Add Doctor</h4>
+		  </div>
+		  <div class="modal-body clearfix">
+			<div class="row-fluid">
+				<div class="span12">
+				  <div class="widget-box">
+					<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+					  <h5>Patient Information</h5>
+					</div>
+					<div class="widget-content nopadding">
+						<form  action="#" method="get" class="form-horizontal">
+							<div class="control-group">
+							  <label class="control-label">Patient Name :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="Patient Name">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label">Phone No. :</label>
+							  <div class="controls">
+								<input type="text" id="mask-phone" class="span11 mask text">
+								<span class="help-block blue span11">(999) 999-9999</span> 
+							</div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label">Email :</label>
+							  <div class="controls">
+								<input type="email" class="span11" placeholder="Email">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Gender :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="Gender">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Add Doctor :</label>
+							  <div class="controls">
+								<select>
+								  <option>First option</option>
+								  <option>Second option</option>
+								  <option>Third option</option>
+								  <option>Fourth option</option>
+								  <option>Fifth option</option>
+								  <option>Sixth option</option>
+								  <option>Seventh option</option>
+								  <option>Eighth option</option>
+								</select>
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Address :</label>
+							  <div class="controls">
+								<textarea class="span11"></textarea>
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">City :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="City">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">State :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="State">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Pin :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="Pin">
+							  </div>
+							</div>								
+							<div class="form-actions">
+							  <button type="submit" class="btn btn-success">Save</button>
+							</div>
+						</form>
+					</div>
+					<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+					  <h5>Emergency Contact</h5>
+					</div>
+					<div class="widget-content nopadding">
+						<form  action="#" method="get" class="form-horizontal">
+							<div class="control-group">
+							  <label class="control-label">Name :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="First name">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label">Relationship :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="Relationship">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label">Phone No. :</label>
+							  <div class="controls">
+									<input type="text" id="mask-phone" class="span11 mask text">
+									<span class="help-block blue span11">(999) 999-9999</span> 
+							</div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Email :</label>
+							  <div class="controls">
+								<input type="email" class="span11" placeholder="Email">
+							  </div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label">Address :</label>
+							  <div class="controls">
+								<textarea class="span11"></textarea>
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">City :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="City">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">State :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="State">
+							  </div>
+							</div>	
+							<div class="control-group">
+							  <label class="control-label">Pin :</label>
+							  <div class="controls">
+								<input type="text" class="span11" placeholder="Pin">
+							  </div>
+							</div>								
+							<div class="form-actions">
+							  <button type="submit" class="btn btn-success">Save</button>
+							</div>
+						</form>
+					</div>
+				   </div>
+				</div>	
+			</div>	
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
     <div class="row-fluid">
       <div class="span12">  
 		<div class="widget-box">
           <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-            <h5>Doctor</h5>
-          </div>
+            <h5>Doctor Details</h5>
+          </div>		  
           <div class="widget-content nopadding">
             <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">		
 			<table class="table table-bordered data-table dataTable" id="DataTables_Table_0">
@@ -91,7 +246,9 @@
 					<th>Location</th>
 					<th>Specilization</th>
 					<th>Joining Date</th>
-					<th>Department</th>					
+					<th>Department</th>	
+					<th>Edit</th>
+					<th>Delete</th>					
 				</tr>
               </thead>
               
@@ -102,175 +259,19 @@
                   <td class="">XYZ</td>
                   <td class="center">XYZ</td>
                   <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
+                  <td class="center">XYZ</td>  
+				  <td class="center"><button class="btn btn-info btn-mini">Edit</button></td>
+                  <td class="center"><button class="btn btn-danger btn-mini">Delete</button></td>  				  
                 </tr>
-				<tr class="gradeA even">
+				<tr>
                   <td class="sorting_1">12346</td>
                   <td class="">ABC</td>
                   <td class="">XYZ</td>
                   <td class="center">XYZ</td>
                   <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>	
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
-                </tr>		
-				<tr class="gradeA odd">
-                  <td class="sorting_1">12345</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                
-                </tr>
-				<tr class="gradeA even">
-                  <td class="sorting_1">12346</td>
-                  <td class="">ABC</td>
-                  <td class="">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>
-                  <td class="center">XYZ</td>                 
+                  <td class="center">XYZ</td>    
+				  <td class="center"><button class="btn btn-info btn-mini">Edit</button></td>
+                  <td class="center"><button class="btn btn-danger btn-mini">Delete</button></td>  	 				  
                 </tr>						
 			</tbody>
 			</table>
@@ -312,7 +313,6 @@
 <script src="js/matrix.popover.js"></script> 
 <script src="js/jquery.dataTables.min.js"></script>  
 <script src="js/matrix.tables.js"></script>
-
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
