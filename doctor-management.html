@@ -20,7 +20,7 @@
 
 <!--Header-part-->
 <div id="header">  
-  <h1><a href="dashboard.html"><img src="img/logo.png" alt="Logo"></a></h1>
+  <h1><a href="index.html"><img src="img/logo.png" alt="Logo"></a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -50,7 +50,7 @@
 <!--sidebar-menu-->
 <div id="sidebar"><a href="index.html" class="visible-phone"><i class="icon icon-home"></i> Home</a>
   <ul>    
-	<li class="hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
+	<li class="active hidden-phone"><a href="index.html"><i class="icon icon-home"></i> <span>Home</span></a> </li>
     <li><a href="call-management.html"><i class="icon icon-comment-alt"></i> <span>Call Management</span></a></li>
 	<li class="submenu"><a href="#"><i class="icon icon-user"></i> <span>Doctor Management</span></a>
 	 <ul>
@@ -154,77 +154,72 @@
 							  <div class="controls">
 								<input type="text" class="span11" placeholder="Pin">
 							  </div>
-							</div>								
-							<div class="form-actions">
-							  <button type="submit" class="btn btn-success">Save</button>
+							</div>	
+							<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+							  <h5>Emergency Contact</h5>
 							</div>
+							<div class="widget-content nopadding">					
+									<div class="control-group">
+									  <label class="control-label">Name :</label>
+									  <div class="controls">
+										<input type="text" class="span11" placeholder="First name">
+									  </div>
+									</div>
+									<div class="control-group">
+									  <label class="control-label">Relationship :</label>
+									  <div class="controls">
+										<input type="text" class="span11" placeholder="Relationship">
+									  </div>
+									</div>
+									<div class="control-group">
+									  <label class="control-label">Phone No. :</label>
+									  <div class="controls">
+											<input type="text" id="mask-phone" class="span11 mask text">
+											<span class="help-block blue span11">(999) 999-9999</span> 
+									</div>
+									</div>	
+									<div class="control-group">
+									  <label class="control-label">Email :</label>
+									  <div class="controls">
+										<input type="email" class="span11" placeholder="Email">
+									  </div>
+									</div>
+									<div class="control-group">
+									  <label class="control-label">Address :</label>
+									  <div class="controls">
+										<textarea class="span11"></textarea>
+									  </div>
+									</div>	
+									<div class="control-group">
+									  <label class="control-label">City :</label>
+									  <div class="controls">
+										<input type="text" class="span11" placeholder="City">
+									  </div>
+									</div>	
+									<div class="control-group">
+									  <label class="control-label">State :</label>
+									  <div class="controls">
+										<input type="text" class="span11" placeholder="State">
+									  </div>
+									</div>	
+									<div class="control-group">
+									  <label class="control-label">Pin :</label>
+									  <div class="controls">
+										<input type="text" class="span11" placeholder="Pin">
+									  </div>
+									</div>								
+									<div class="form-actions">
+									  <button type="submit" class="btn btn-success">Save</button>
+									</div>							
+								</div>							
 						</form>
-					</div>
-					<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-					  <h5>Emergency Contact</h5>
-					</div>
-					<div class="widget-content nopadding">
-						<form  action="#" method="get" class="form-horizontal">
-							<div class="control-group">
-							  <label class="control-label">Name :</label>
-							  <div class="controls">
-								<input type="text" class="span11" placeholder="First name">
-							  </div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label">Relationship :</label>
-							  <div class="controls">
-								<input type="text" class="span11" placeholder="Relationship">
-							  </div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label">Phone No. :</label>
-							  <div class="controls">
-									<input type="text" id="mask-phone" class="span11 mask text">
-									<span class="help-block blue span11">(999) 999-9999</span> 
-							</div>
-							</div>	
-							<div class="control-group">
-							  <label class="control-label">Email :</label>
-							  <div class="controls">
-								<input type="email" class="span11" placeholder="Email">
-							  </div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label">Address :</label>
-							  <div class="controls">
-								<textarea class="span11"></textarea>
-							  </div>
-							</div>	
-							<div class="control-group">
-							  <label class="control-label">City :</label>
-							  <div class="controls">
-								<input type="text" class="span11" placeholder="City">
-							  </div>
-							</div>	
-							<div class="control-group">
-							  <label class="control-label">State :</label>
-							  <div class="controls">
-								<input type="text" class="span11" placeholder="State">
-							  </div>
-							</div>	
-							<div class="control-group">
-							  <label class="control-label">Pin :</label>
-							  <div class="controls">
-								<input type="text" class="span11" placeholder="Pin">
-							  </div>
-							</div>								
-							<div class="form-actions">
-							  <button type="submit" class="btn btn-success">Save</button>
-							</div>
-						</form>
-					</div>
+					</div>					
 				   </div>
 				</div>	
 			</div>	
 		  </div>
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 		  </div>
 		</div>
 	  </div>
